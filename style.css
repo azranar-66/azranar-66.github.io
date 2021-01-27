@@ -101,3 +101,146 @@ body {
 .content_article p {
     margin-bottom: 20px;
 }
+
+:root {
+    --filter: drop-shadow(1px 1px 1px rgb(163, 162, 162));
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+.container {
+    width: 800px;
+    min-height: 500px;
+    border: 10px solid #fff;
+    margin: 0 auto;
+    background: #fff;
+    filter: var(--filter);
+}
+
+.header {
+    display: flex;
+    height: 150px;
+    filter: var(--filter);
+}
+
+.title-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    font-size: 30px;
+    background: url(https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80) no-repeat center center/cover;
+    color: #fff;
+    margin-right: 10px;
+    filter: var(--filter);
+}
+
+.title-block::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter: var(--filter);
+}
+
+.title {
+    position: relative;
+    z-index: 1;
+    filter: var(--filter);
+}
+
+.userpic {
+    display: flex;
+    height: 100%;
+    width: 20%;
+    background: url(1.jpg) no-repeat center center/cover;
+    filter: var(--filter);
+}
+
+.nav {
+    filter: var(--filter);
+}
+
+.nav ul {
+    display: flex;
+    background: rgb(197, 197, 197);
+    margin: 10px 0;
+    filter: var(--filter);
+}
+
+.nav li a {
+    display: flex;
+    padding: 20px;
+    text-decoration: none;
+    color: #404040;
+    font-weight: bold;
+    border-right: 1px solid #d1d1d1;
+    transition: background .3s ease;
+    filter: var(--filter);
+}
+
+.nav li a:hover {
+    background: rgb(133, 133, 133);
+    filter: var(--filter);
+}
+
+.content-wrapper {
+    display: flex;
+    filter: var(--filter);
+}
+
+.content_w {
+    width: 70%;
+    padding: 20px;
+    filter: var(--filter);
+    font-size: 22px;
+}
+
+.content_w p {
+    line-height: 20px;
+}
+
+.sidebar {
+    width: 30%;
+    padding: 20px;
+    filter: var(--filter);
+}
+
+.skills li {
+    padding: 10px 0;
+    transition: transform .5s ease;
+    cursor: pointer;
+    filter: var(--filter);
+}
+
+.skills li:hover {
+    transform: translateX(10px);
+}
+
+.content_w img {
+    padding: 10px 0;
+    transition: top 1s ease-out 0.5s;
+    cursor: pointer;
+    filter: var(--filter);
+}
+
+.content_w img:hover {
+    transform: rotate3d(2, -1, -1, -0.2turn);
+}
