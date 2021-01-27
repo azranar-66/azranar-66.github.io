@@ -244,3 +244,33 @@ h3 {
 .content_w img:hover {
     transform: rotate3d(2, -1, -1, -0.2turn);
 }
+
+@media(max-width:1170px) {
+    .content_body {
+        max-width: none;
+    }
+}
+
+@media(max-width:1170px) {
+    .content {
+        max-width: none;
+    }
+}
+
+@media(max-width:1170px) {
+    body {
+        max-width: none;
+    }
+}
+
+@media(max-width:1170px) {
+    .content_w {
+        max-width: none;
+    }
+}
+
+@media(max-width:1170px) {
+    div {
+        max-width: none;
+    }
+}
