@@ -1,49 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Horizontal Scroll</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>My Business Card</title>
 </head>
 
 <body>
-    <div class="top"></div>
-    <div class="container">
-
-        <div class="block block-1">
-            <a class="cci" href="kaer.html">
-                <h1>Путешествие.</h1>
-            </a>
-
-        </div>
-        <div class="block block-2">
-            <h1>Сомнения.</h1>
-        </div>
-        <div class="block block-3">
-            <h1>Бой.</h1>
-        </div>
-        <div class="block block-4">
-            <h1>Охота.</h1>
-        </div>
-        <div class="block block-5">
-            <h1>Победа.</h1>
-        </div>
+  <div class="container">
+    <div class="header">
+      <div class="title-block">
+        <h1 class="title">Junior WEB Developer</h1>
+      </div>
+      <div class="userpic"></div>
     </div>
-    <script class="js" src="index.js"></script>
-    <script>
-        var blocks = document.getElementsByClassName("block");
-        var container = document.getElementsByClassName("container");
-        var hs = new HorizontalScroll.default({
-            blocks: blocks,
-            container: container,
-            isAnimated: true,
-            springEffect: 0.8,
-        });
-    </script>
-    <video class="video" src="videoplayback.mp4" autoplay muted loop></video>
+    <div class="nav">
+      <ul>
+        <!-- <li><a href="#">Main Info</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="https://www.instagram.com/azranar/">Contact Page</a></li> -->
+      </ul>
+    </div>
+    <div class="content-wrapper">
+      <div class="content">
+        <h2>WHAT I DO</h2>
+        <p>
+        <h3>Frontend</h3><br>
+        <br>
+        Layout of beautiful and modern web pages with full adaptability for any device and full interactivity both from
+        a PSD-layout, and without it.<br>
+        <br>
+        <h3>Backend</h3>
+        <br>
+        Development of complex backend logic for a ready-made frontend, or according to a detailed technical task,
+        ensuring maximum efficiency and productivity.<br>
+        <br>
+        <h3>Full stack</h3>
+        <br>
+        Creation of full-fledged websites and web applications, including user interface, complex business logic and
+        high-performance server-side scripts.<br>
+        <br>
+        <h3>SEO</h3>
+        <br>
+        Optimization of the site structure for better processing by search engines, which subsequently improves its
+        position in the search results, accelerating development and increasing traffic.<br> </p>
+        <br>
+        <br>
+        <br>
+        <h2>ABOUT ME</h2>
+        <br>
+        <p>
+        <h3>What I would like to note:</h3>
+        <br>
+        <ul type="disc">
+          <li>High quality of both graphic materials and internal site algorithms.</li><br>
+          <br>
+          <li>Freelance as the main activity, which means full commitment in the process of working on an order.</li><br>
+          <br>
+          <li>Attentiveness to all customer requirements and clarification of unclear points.</li><br>
+          <br>
+          <li>Ensuring the result at every significant stage of work with the possibility of making some adjustments.</li><br>
+          <br>
+        </ul>
+
+
+
+
+        <br>
+        </p>
+        <h3>Contact Page</h3>
+        <p>
+          <a href="https://www.instagram.com/azranar/"><img
+              src="https://image.flaticon.com/icons/png/512/123/123723.png" width="35px" alt="" /></a>
+          <a href="https://www.instagram.com/azranar/"><img
+              src="https://image.flaticon.com/icons/png/512/123/123736.png" width="35px" alt="" /></a>
+          <a href="https://www.instagram.com/azranar/"><img src="https://image.flaticon.com/icons/png/512/13/13750.png"
+              width="35px" alt="" /></a>
+          <a href="https://www.instagram.com/azranar/"><img src="https://image.flaticon.com/icons/png/512/13/13807.png"
+              width="35px" alt="" /></a>
+          <a href="https://www.instagram.com/azranar/"><img
+              src="https://image.flaticon.com/icons/png/512/123/123739.png" width="35px" alt="" /></a>
+        </p>
+
+      </div>
+      <div class="sidebar">
+        <h3>Skills</h3>
+        <ul class="skills">
+          <li><a href="https://ru.wikipedia.org/wiki/HTML">HTML</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/CSS">CSS</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Git">Git</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/PHP">PHP</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
+        </ul>
+      </div>
 </body>
 
 </html>
